@@ -1,0 +1,141 @@
+body{
+    background-color: rgba(175, 207, 175, 0.952);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    border: #000 1px solid;
+    min-width: 500px;
+}
+.items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: end;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    min-width: 99%;
+}
+.items_1{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background-color: rgb(101, 171, 204);
+}
+.items_2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    min-width: 100%;
+    background-color: rgb(255, 255, 255);
+    
+}
+.items_3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+input{
+    min-height: 30%;
+    min-width: 98%;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    border: #000 1px solid;
+    color: #000;
+    font-size: 20px;
+}
+.button{
+    background-color: rgba(0, 145, 241, 0.726);
+}
+.button:hover{
+    background-color: rgb(120, 121, 201);
+    color: #000;
+}
+.numero{
+    background-color: rgba(201, 201, 201, 0.849);
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px;
+    font-size: 20px;
+    flex-basis: 400px;
+    flex-grow: 1;
+    cursor: pointer;
+}
+.numero:hover{
+    background-color: rgb(206, 119, 119);
+    color: #000;
+}
+.resultado{
+    font-size: 40px;    
+}
+.textAuxiliar{
+    font-size: 20px;
+}
+.container2{
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    border: #000 1px solid;
+    min-width: 200px;
+    margin-left: 10px;
+    margin-top: 120px;   
+    min-height: 400px;  
+}
+.igual{
+    background-color: rgba(89, 114, 253, 0.849);
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px;
+    font-size: 20px;
+    flex-basis: 400px;
+    flex-grow: 1;
+    cursor: pointer;
+}
+.igual:hover{
+    background-color: rgb(61, 62, 150);
+    color: #000;
+}
+.c{
+    background-color: rgba(226, 61, 61, 0.812);
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px;
+    font-size: 20px;
+    flex-basis: 400px;
+    flex-grow: 1;
+    cursor: pointer;
+}
+.c:hover{
+    background-color: rgb(179, 49, 49);
+    color: #000;
+}
+.ac{
+    background-color: rgba(226, 61, 61, 0.812);
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px;
+    font-size: 20px;
+    flex-basis: 400px;
+    flex-grow: 1;
+    cursor: pointer;
+}
+.ac:hover{    
+    background-color: rgb(179, 49, 49);
+    color: #000;
+}

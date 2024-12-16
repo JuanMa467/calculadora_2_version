@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="shortcut icon" href="{{ url_for( 'static',  filename='img/calculadora.svg')}}">
+    <link rel="stylesheet" href="{{ url_for( 'static',  filename='css/calculadora.css')}}">   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="{{ url_for( 'static',  filename='js/calculadora.js')}}"></script>
+</head>
+<body>
+    <div>
+        <h1>Calculadora</h1>
+        <div class="container">
+            <div class="items">
+            <input type="text" id="numero" >
+            </div>
+            <div class="items">
+                <div class="items_1">
+                    <div class="items_2">
+                        <button class="numero" onclick="porcentajeNumero()">%</button>
+                        <button class="c" onclick="borrarNumero()">C</button>
+                        <button class="ac" onclick="borrarTodo()">AC</button>
+                        <button class="numero" onclick="sumarNumero()">+</button>
+                    </div>
+                    <div class="items_2">
+                        <button class="numero" onclick="numero1()">1</button>
+                        <button class="numero" onclick="numero2()">2</button>
+                        <button class="numero" onclick="numero3()">3</button>
+                        <button class="numero" onclick="restarNumero()">-</button>
+                    </div>
+                    <div class="items_2">
+                        <button class="numero" onclick="numero4()">4</button>
+                        <button class="numero" onclick="numero5()">5</button>
+                        <button class="numero" onclick="numero6()">6</button>
+                        <button  class="numero" onclick="elevarNumero()">^</button>
+                    </div>
+                    <div class="items_2">  
+                        <button class="numero" onclick="numero7()">7</button>
+                        <button class="numero" onclick="numero8()">8</button>
+                        <button class="numero" onclick="numero9()">9</button>
+                        <button  class="numero" onclick="multiplicarNumero()">X</button>
+                    </div>
+                    <div class="items_2">
+                        <button class="numero" onclick="coma()">.</button>
+                        <button class="numero" onclick="numero0()">0</button>
+                        <button class="igual" onclick="igual()">=</button>
+                        <button  class="numero" onclick="dividirNumero()">/</button>
+                    </div>
+                </div>
+            </div>
+            <div class="items_2">
+                <p id="resultado" class="resultado"></p>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="items_2">
+            <p>Historial de Operaciones</p>
+        </div>
+        <div class="items_2">
+            <p id="historial" class="historial"></p>
+        </div>
+    </div>
+</body>
+</html>
